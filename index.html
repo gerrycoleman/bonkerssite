@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Learning Web Development">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript"> 
+    <meta name="author" content="Gerry Coleman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonkers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <p>Nothing to see here...</p>
-  <!-- Project -->
-  <script src="main.js"></script>
+    <div class="wrap">
+        <header>
+            <div class="header-left">
+                <a href="#home">
+                    <img src="assets/images/logo.svg" alt="Frisky Logo">
+                </a>
+                <div class="divider hide-mobile"></div>
+                <a href="#home" class="home hide-mobile">Home</a>
+            </div>
+            <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="assets/images/menu.svg" alt="open menu">
+                </a>
+                <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="assets/images/close.svg" alt="close menu">
+                        </a>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1>Your cat will go <img src="assets/images/bonkers.svg" alt="says bonkers"></h1>
+                <p class="main-par">
+                    Uncomment for a colored prompt if the terminal has the capability. Turned off by default to not distract the user. The focus in a terminal window should be on the output of commands, not on the prompt.
+                </p>
+                <a href="#" class="primary-cta">Get Bonkers</a>
+            </section>
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Welcome to Bonkers! We are passionate about creating fun and engaging experiences for cat lovers.
+                </p>
+            </section>
+            <section id="journey">
+                <h2>Journey</h2>
+                <p>
+                    Our journey began with a simple idea: to bring joy to cats and their owners. Follow our story as we continue to innovate and bring new products to life.
+                </p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>
+                    Check out our latest projects designed to make your cat's life more enjoyable.
+                </p>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <p>
+                    Read our latest articles and updates about cat care, product news, and more.
+                </p>
+            </section>
+            <section id="connect">
+                <h2>Connect</h2>
+                <p>
+                    Get in touch with us! We'd love to hear from you.
+                </p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <div class="cat-container">
+            <div class="cat">
+                <img src="assets/images/cat.png" alt="cat illustration">
+                <div class="inner-circle"></div>
+                <div class="outer-circle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
